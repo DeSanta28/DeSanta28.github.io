@@ -58,6 +58,15 @@ body {
     text-align: center;
   }
 
+  .my-project1 {
+    text-align: center;
+  }
+
+  .my-project2 {
+    color: rgb(170, 170, 170);
+    text-align: center;
+  }
+
   .social-media1 {
     text-align: center;
   }
@@ -119,5 +128,4 @@ body {
     color: #fff;
     text-decoration: none;
   }
-  
   
