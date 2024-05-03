@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  nav {
+    background-color: rgba(0, 0, 0, 0.43);
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    z-index: 999;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none !important;
+    color: white !important;
+    font-weight: bold;
+  }
+
+  .profile-photo {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid gray;
+  }
+  
+
+  .about1 {
+    text-align: center;
+  }
+
+  .about2 {
+    color: rgb(170, 170, 170);
+    text-align: center;
+  }
+
+  .skill1 {
+    text-align: center;
+  }
+
+  .skill2 {
+    color: rgb(170, 170, 170);
+    text-align: center;
+  }
+
+  .social-media1 {
+    text-align: center;
+  }
+
+  .social-media2 {
+    color: rgb(170, 170, 170);
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-media-icons a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-media-icons img {
+    width: 75px;
+    height: 75px;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .footer-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
