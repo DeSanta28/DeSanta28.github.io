@@ -152,9 +152,6 @@ body {
 
  /* BAGIAN BOOTSTRAP CARD */
  @media (max-width: 768px) {
-  .row {
-    margin-left: 100px !important;
-  }
   .card {
     max-width: 225px;
     min-height: 190px;
