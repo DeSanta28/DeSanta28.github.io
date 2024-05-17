@@ -1,277 +1,356 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
-  }
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
 
-  /* BAGIAN NAVIGASI */
-  nav {
-    background-color: #333;
-    white-space: nowrap;
-  }
-  
+/* BAGIAN NAVIGASI */
+nav {
+  background-color: #333;
+  white-space: nowrap;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+
+nav li {
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
   nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
-  
-  nav li {
-    flex-grow: 1;
-    text-align: center;
-  }
-  
+
   nav a {
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    font-size: 15px;
-    white-space: nowrap;
-  }
-  
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: row;
-      overflow-x: auto;
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-
-    nav a {
-      font-size: 10px;
-    }
-  
-    nav li {
-      text-align: center;
-      border-bottom: 1px solid #666;
-    }
-    
-    nav::-webkit-scrollbar {
-      display: none;
-    }
-  }
-  
-  nav a:hover {
-    background-color: #555;
-  }
-  
-  /* BAGIAN BOOSTRAP CAROUSEL */
-  .carousel-caption h5 {
-    font-size: 18px;
-  }
-  
-  @media (max-width: 768px) {
-    .carousel-caption {
-      font-size: 10px;
-    }
-    .carousel-caption h5 {
-      font-size: 10px;
-    }
-  }
-  
-  /* BAGIAN PHOTO PROFILE */
-  .profile-photo {
-    width: 190px;
-    height: 190px;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    border: 5px solid #333;
+    font-size: 10px;
   }
 
-  .profile-photo:hover {
-    scale: 1.1;
-    transition: 1s;
-  }
-
-  @media (max-width: 768px) {
-    .profile-photo {
-      width: 135px;
-      height: 135px;
-      border: 4px solid #333;
-    }
-  }
-  
-  /* BAGIAN ABOUT */
-  .about1 {
+  nav li {
     text-align: center;
+    border-bottom: 1px solid #666;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* BAGIAN BOOSTRAP CAROUSEL */
+.carousel-caption h5 {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 10px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 10px;
+  }
+}
+
+/* BAGIAN PHOTO PROFILE */
+.profile-photo {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  border: 5px solid #333;
+}
+
+.profile-photo:hover {
+  scale: 1.1;
+  transition: 1s;
+}
+
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 135px;
+    height: 135px;
+    border: 4px solid #333;
+  }
+}
+
+/* BAGIAN ABOUT */
+.about1 {
+  text-align: center;
+}
+
+.about2 {
+  color: rgb(170, 170, 170);
+  text-align: center;
+  max-width: 720px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .about1 {
+    font-size: 15px;
   }
 
   .about2 {
-    color: rgb(170, 170, 170);
-    text-align: center;
-    max-width: 720px;
+    font-size: 10px;
+    max-width: 77%;
     margin: auto;
   }
+}
 
-  @media (max-width: 768px) {
-    .about1 {
-      font-size: 15px;
-    }
-
-    .about2 {
-      font-size: 10px;
-    }
-  }
-  /* BAGIAN BOOSTRAP ACCORDION */
-  @media (max-width: 768px) {
-    #accordionFlushExample .accordion-button {
-      font-size: 10px;
-    }
-    #accordionFlushExample .accordion-body {
-      font-size: 10px;
-    }
+/* BAGIAN BOOSTRAP ACCORDION */
+@media (max-width: 768px) {
+  #accordionFlushExample .accordion-button {
+    font-size: 10px;
   }
 
-  /* BAGIAN SKILL */
+  #accordionFlushExample .accordion-body {
+    font-size: 10px;
+  }
+}
+
+/* BAGIAN SKILL */
+.skill1 {
+  text-align: center;
+}
+
+.skill2 {
+  color: rgb(170, 170, 170);
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.card {
+  width: 275px;
+  height: 350px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  float: left;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.9rem
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
   .skill1 {
-    text-align: center;
+    font-size: 15px;
   }
 
   .skill2 {
-    color: rgb(170, 170, 170);
-    text-align: center;
-    max-width: 700px;
+    font-size: 10px;
+    max-width: 80%;
     margin: auto;
   }
 
-  @media (max-width: 768px) {
-    .skill1 {
-      font-size: 15px;
-    }
-    .skill2 {
-      font-size: 10px;
-    }
-  }
-
- /* BAGIAN BOOTSTRAP CARD */
- @media (max-width: 768px) {
   .card {
-    max-width: 225px;
-    min-height: 190px;
+    width: 150px;
+    height: 250px;
   }
-  .card-img-top {
-    max-width: 100%;
-    height: auto;
+
+  .card h3 {
+    font-size: 0.5rem;
   }
-  .card-title {
-    font-size: 15px;
+
+  .card p {
+    font-size: 0.4rem;
+
   }
-  .card-text {
-    font-size: 10px;
-  }
-  .card-body {
-    padding: 10px;
-  }
-  a.btn {
-    font-size: 10px;
 }
 
+/* BAGIAN MY PROJECT */
+.my-project1 {
+  text-align: center;
 }
 
-  /* BAGIAN MY PROJECT */
+.my-project2 {
+  color: rgb(170, 170, 170);
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item {
+  position: relative;
+  width: 250px;
+  height: 150px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.caption {
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 0;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
   .my-project1 {
-    text-align: center;
+    font-size: 15px;
   }
 
   .my-project2 {
-    color: rgb(170, 170, 170);
-    text-align: center;
+    font-size: 10px;
+    max-width: 65%;
+    margin: auto;
   }
 
-  @media (max-width: 768px) {
-    .my-project1 {
-      font-size: 15px;
-    }
-    .my-project2 {
-      font-size: 10px;
-    }
+  .gallery {
+    grid-template-columns: repeat(2, 150px);
   }
 
-  /* BAGIAN SOCIAL MEDIA */
+  .gallery-item {
+    position: relative;
+    width: 155px;
+    height: 100px;
+  }
+
+  .caption {
+    font-size: 10px;
+  }
+}
+
+/* BAGIAN SOCIAL MEDIA */
+.social-media1 {
+  text-align: center;
+}
+
+.social-media2 {
+  color: rgb(170, 170, 170);
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-media-icons img {
+  width: 75px;
+  height: 75px;
+}
+
+@media (max-width: 768px) {
   .social-media1 {
-    text-align: center;
+    font-size: 15px;
   }
 
   .social-media2 {
-    color: rgb(170, 170, 170);
-    text-align: center;
+    font-size: 10px;
   }
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .social-media-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .social-media-icons a {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
   .social-media-icons img {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
   }
+}
 
-  @media (max-width: 768px) {
-    .social-media1 {
-      font-size: 15px;
-    }
-    .social-media2 {
-      font-size: 10px;
-    }
-    .social-media-icons img {
-      width: 50px;
-      height: 50px;
-    }
-  }
-
-  /* BAGIAN TO TOP */
-  #back-to-top-btn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #33333356;
-    color: white;
-    cursor: pointer;
-    padding: 10px 15px;
-    border-radius: 50%;
-    font-size: 18px;
+/* BAGIAN TO TOP */
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #33333356;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
 }
 
 #back-to-top-btn:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
-  /* BAGIAN FOOTER */
-  .footer {
-    background-color: #333;
-    font-size: 15px;
-    font-weight: 600;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
+/* BAGIAN FOOTER */
+.footer {
+  background-color: #333;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
 
-  @media (max-width: 768px) {
-    .footer {
-      font-size: 10px;
-    }
+@media (max-width: 768px) {
+  .footer {
+    font-size: 10px;
   }
+}
